@@ -42,12 +42,14 @@ body,html{
     width: 450px;
     right: 0;
     rotate: 10deg;
+    z-index: 0;
 }
 #header h1{
     letter-spacing: -3px;
     word-spacing: 5px;
     font-size: 4.5vw;
     font-family: "Oswald", sans-serif;
+    z-index: 1;
 }
 #header h1 span{
     -webkit-text-stroke-width: 0.5px;
@@ -61,6 +63,7 @@ body,html{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 1;
 }
 #linbtn a{
     text-decoration: none;
