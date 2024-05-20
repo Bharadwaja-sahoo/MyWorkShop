@@ -366,7 +366,7 @@ ul li:hover:nth-child(4) a:after {
         right: -15%;
     }
     #header h1{
-        letter-spacing: -3px;
+        letter-spacing: 0px;
         word-spacing: 5px;
         font-size: 7.5vw;
         font-family: "Oswald", sans-serif;
