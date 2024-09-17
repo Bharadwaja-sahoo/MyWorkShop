@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @font-face {
     font-family: canopee;
-    src: url(./Canopee.ttf);
+    src: url(Canopee.ttf);
 }
 @font-face {
     font-family: domain;
-    src: url(./Domaine.ttf);
+    src: url(Domaine.ttf);
 }
 *{
     margin: 0;
@@ -20,6 +20,7 @@ body,html{
 #container{
     background-color: #353131;
 }
+
 #pages{
     width: 100%;
     height: 100%;
@@ -57,23 +58,17 @@ body,html{
     color: transparent;
 }
 #linkbtn{
-    width: 30%;
-    height: 100px;
     margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     z-index: 1;
 }
 #linbtn a{
     text-decoration: none;
 }
 .button{
+    padding: 5px 15px;
     color: #ffffff;
     background-color: #000000;
-    font-size: 25px;
-    width: 10vw;
-    height: 7vh;
+    font-size: 20px;
     border-radius: 10px;
     border: 0.5px solid #ffffff;
     outline: none;
@@ -104,6 +99,7 @@ body,html{
   top: 0;
   right: -20px;
   transition: 0.5s;
+  font-size: 20px;
 }
 .button:hover span {
   padding-right: 25px;
@@ -113,8 +109,6 @@ body,html{
   right: 0;
 }
 #hero{
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -345,12 +339,7 @@ ul li:hover:nth-child(4) a:after {
         rotate: 20deg;
     }
     .button{
-        font-size: 25px;
-        width: 20vw;
-        height: 5vh;
-    }
-    #linkbtn{
-        width: 50%;
+        font-size: 3vw;
     }
     .box-down h1{
         font-size: 3.5vw;
@@ -377,12 +366,7 @@ ul li:hover:nth-child(4) a:after {
         color: transparent;
     }
     .button{
-        font-size: 25px;
-        width: 25vw;
-        height: 5vh;
-    }
-    #linkbtn{
-        width: 60%;
+        font-size: 3vw;
     }
     .box{
         margin-left: 0px;
