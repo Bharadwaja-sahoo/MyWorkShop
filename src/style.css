@@ -18,7 +18,10 @@ body,html{
     height: 100%;
 }
 #container{
-    background-color: #353131;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #000000;
 }
 
 #pages{
@@ -40,9 +43,10 @@ body,html{
 }
 #header img{
     position: absolute;
-    width: 450px;
+    width: 400px;
+    top: 0;
     right: 0;
-    rotate: 10deg;
+    rotate: 15deg;
     z-index: 0;
 }
 #header h1{
@@ -108,30 +112,39 @@ body,html{
   opacity: 1;
   right: 0;
 }
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
 #hero{
+    width: 90%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #12141d;
     padding-bottom: 50px;
+    border-radius: 30px;
+    column-gap: 20px;
 }
 .box{
-    margin-left: 30px;
-    margin-top: 50px;
     width: 400px;
-    height: 400px;
+    height: 350px;
+    margin-top: 50px;
     border-radius: 20px;
     border: 2px solid black;
     overflow: hidden;
     border: 1px solid rgb(82, 81, 81);
     background-color: #1e2028;
+    cursor: pointer;
 }
 .box-top{
     width: 100%;
-    height: 50%;
+    height: 60%;
     overflow: hidden;
-    
 }
 .box-top img{
     width: 100%;
@@ -144,14 +157,14 @@ body,html{
 }
 .box-down{
     width: 100%;
-    height: 50%;
+    height: 40%;
     display: flex;
     flex-direction: column;
-    padding: 20px 30px;
+    padding: 10px 30px;
     color: #ffffff;
 }
 .box-down h1{
-    font-size: 2vw;
+    font-size: 20px;
 }
 .box-down a{
     margin-top: 20px;
@@ -165,11 +178,11 @@ body,html{
     padding: 30px 0;
     background-color: #C4BCB3;
     white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: hidden;
     border-top: 1px solid #2f2f2f;
     border-bottom: 1px solid #2f2f2f;
-    cursor: default;
+    cursor: pointer;
+    margin-top: 0px;
 }
 #scroll::-webkit-scrollbar{
     display: none;
@@ -190,6 +203,9 @@ body,html{
     background-color: #2f2f2f;
     color:#C4BCB3 ;
     padding: 0 2px;
+}
+#scroll h1 span a{
+    all: unset;
 }
 @keyframes scrolll{
     0%{
@@ -341,9 +357,7 @@ ul li:hover:nth-child(4) a:after {
     .button{
         font-size: 3vw;
     }
-    .box-down h1{
-        font-size: 3.5vw;
-    }
+    
     #foot2{
         font-size: 2vw;
     }
@@ -371,14 +385,24 @@ ul li:hover:nth-child(4) a:after {
     .box{
         margin-left: 0px;
     }
-    .box-down h1{
-        font-size: 5vw;
-    }
-    .box-down a{
-        font-size: 2.5vw;
-    }
     #foot2{
         font-size: 3vw;
         word-spacing: 5px;
+    }
+}
+@media screen and (max-width:679px){
+    .box{
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .box-down{
+        padding: 15px 20px;
+    }
+    .box-down h1{
+        font-size: 20px;
+    }
+    .box-down a{
+        margin-top: 10px;
     }
 }
