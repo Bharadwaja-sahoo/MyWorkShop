@@ -27,6 +27,9 @@ $(document).ready(function () {
             heroContent += `
                 <div class="box">
                     <div class="box-top">
+                        <div id="top-div">
+                            <a href="${item.webview}"><button class="button"><span>${item.name} </span></button></a>
+                        </div>
                         <img src="${item.image}" alt="${item.name}">
                     </div>
                     <div class="box-down">
