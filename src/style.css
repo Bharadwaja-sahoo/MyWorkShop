@@ -29,6 +29,7 @@ body,html{
     height: 100%;
     background-color: #000000;
     overflow: hidden;
+    position: relative;
 }
 #header{
     width: 100%;
@@ -41,7 +42,7 @@ body,html{
     position: relative;
     overflow: hidden;
 }
-#header img{
+#headerimg{
     position: absolute;
     width: 400px;
     top: 0;
@@ -80,10 +81,7 @@ body,html{
     cursor: pointer;
     text-align: center;
 }
-.button:active{
-    box-shadow: 0px 0px 0px black;
-    transform: translate(0px,5px);
-}
+
 .button:hover{
     color: #000000;
     background-color: #ffffff;
@@ -118,6 +116,51 @@ main{
     justify-content: center;
     margin-bottom: 0px;
 }
+#gopher-box{
+    position: absolute;
+    width: 90px;
+    height: 120px;
+    bottom: 0%;
+    left: 5%;
+    z-index: 99;
+}
+#gopher-box img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#gopher-box .eye{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-color: transparent;
+    margin: 0 20px;
+    border-radius: 50%;
+    z-index: 99;
+}
+.eye:nth-child(2){
+    position: absolute;
+    top: 24px;
+    left: 0px;
+}
+.eye:nth-child(3){
+    position: absolute;
+    top: 25px;
+    left: 38px;
+}
+#gopher-box .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    transform: translate();
+    border-radius: 50%;
+    box-sizing: border-box;
+}
 #hero{
     width: 90%;
     height: 100%;
@@ -129,6 +172,7 @@ main{
     padding-bottom: 50px;
     border-radius: 30px;
     column-gap: 20px;
+    z-index: 1;
 }
 .box{
     width: 400px;
@@ -349,7 +393,7 @@ ul li:hover:nth-child(4) a:after {
     color: #ffffff80;
 }
 @media screen and (max-width:999px){
-    #header img{
+    #headerimg{
         width: 300px;
         right: -50px;
         rotate: 20deg;
@@ -363,10 +407,11 @@ ul li:hover:nth-child(4) a:after {
     }
 }
 @media screen and (max-width:679px){
-    #header img{
-        width: 250px;
-        top: 30%;
-        right: -15%;
+    #headerimg{
+        width: 400px;
+        right: -92px;
+        rotate: 10deg;
+        top: -2px;
     }
     #header h1{
         letter-spacing: 0px;
@@ -395,6 +440,9 @@ ul li:hover:nth-child(4) a:after {
         width: 300px;
         height: 300px;
         border-radius: 10px;
+    }
+    #gopher-box{
+        display: none;
     }
     .box-down{
         padding: 15px 20px;
